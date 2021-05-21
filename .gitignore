@@ -31,3 +31,5 @@ Thumbs.db
 *.mov
 *.wmv
 
+api/devenv/
+api/get-docker.sh
