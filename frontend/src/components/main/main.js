@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Children } from "react";
+import React, { useState, useEffect } from "react";
 import "./main.css";
 import moment from 'moment';
 import { Calendar, momentLocalizer } from 'react-big-calendar';

@@ -10,7 +10,11 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/Calendar"
+          <Route path="/"
+            exact
+            component={Main}
+          />
+           <Route path="/Calendar"
             exact
             component={Main}
           />

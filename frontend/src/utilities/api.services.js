@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const API_BASE_URL = `http://202.164.44.244:9051/`;
+const API_BASE_URL = `http://202.164.44.244:8000/`;
 
 class ApiService {
 
     getHeaders = () => {
-        axios.defaults.baseURL = `http://202.164.44.244:9051/`;
+        axios.defaults.baseURL = `http://localhost:8000/`;
         axios.defaults.headers.common["Content-Type"] = "application/json";
         return axios;
     };
