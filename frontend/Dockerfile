@@ -13,4 +13,5 @@ RUN npm install --silent
 COPY . .
 
 EXPOSE 9050
-CMD ["npm", "start"]
+#CMD ["npm", "start", "port", "9050"]
+CMD ["npm", "serve", "--port 9050"]
