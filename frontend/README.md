@@ -1,3 +1,11 @@
+# Access point list
+
+- route to: '/Calender' for calender component.
+- route to: 'Data' for chart.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
