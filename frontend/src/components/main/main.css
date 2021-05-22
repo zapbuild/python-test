@@ -1,0 +1,26 @@
+.f1 {
+  background-color: rgb(128, 177, 49);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.f2 {
+  background-color: rgb(49, 151, 177);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.rbc-event{
+  position:relative;
+  background-color: #fff !important;
+  color: #000;
+  display:inline-block;
+  }.rbc-event::after {
+  content: "";
+  border-bottom: 3px solid red;
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  }

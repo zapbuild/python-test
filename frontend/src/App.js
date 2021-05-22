@@ -1,38 +1,27 @@
 import './App.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import logo from './logo.png';
-
-import moment from 'moment';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
+import Main from "./components/main";
+import Chart from "./components/chart";
 
 function App() {
-  const localizer = momentLocalizer(moment)
-
-  const myEventsList = [
-    {
-      title: "Test",
-      start: "2020-10-28",
-      end: "2020-10-29"
-    }
-  ];
-
   return (
     <div className="App">
-      <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Python React Portal</h1>
-      </header>
-      <div>
-        <h2>Calendar</h2>
-        <Calendar
-          localizer={localizer}
-          events={myEventsList}
-          startAccessor="start"
-          endAccessor="end"
-          style={{ height: 500 }}
-        />
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/Calendar"
+            exact
+            component={Main}
+          />
+          <Route path="/Data"
+            exact
+            component={Chart}
+          />
+        </Switch>
+
+      </Router>
+
     </div>
   );
 }
