@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import { CanvasJSChart } from 'canvasjs-react-charts';
+import { getColorCode } from "../../utilities/color.service";
 
-import chart from "../../assets/data.json";
 import logo from '../../logo.png';
+import chart from "../../assets/data.json";
 
 let chartData = [];
 
-chart.data.plot_x.forEach((point, index, arr) => {
+chart.data.plot_x.forEach((point, index) => {
+  let thickness = chart.data.thickness[index];
+  let color = getColorCode(thickness);
   chartData.push({
-    x: chart.data.plot_x[index],
+    x: point,
     y: chart.data.plot_y[index],
-    color: '#c3eb34',
+    thickness,
+    color
   })
 })
 
@@ -49,7 +53,7 @@ class Chart extends Component {
       },
       data: [{
         type: "scatter",
-        toolTipContent: "<b>X: </b>{x}<br/><b>Y: </b>{y}",
+        toolTipContent: "<b>X: </b>{x}<br/><b>Y: </b>{y} <br/><b>thickness: </b>{thickness}",
         dataPoints: chartData
       }]
     }

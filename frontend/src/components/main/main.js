@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./main.css";
 import moment from 'moment';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
-import API from "../../utilities/api.services";
+import API from "../../utilities/api.service";
 import logo from '../../logo.png';
 
 function Event({ event }) {
