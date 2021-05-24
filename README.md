@@ -2,6 +2,11 @@
 
 Hi there! 😀
 
+# Access point list
+
+- route to: '/Calender' for calender component.
+- route to: 'Data' for chart.
+
 ## Getting Started
 
 To get started, you'll need [Docker](https://docs.docker.com/get-docker/). This exercise packages a React frontend and a Django backend using [Docker Compose](https://docs.docker.com/compose/). To complete it, you will need to make modifications to both. Hot reloading is configured and we've tried to make it as easy as possible to get started (including some seed data).
