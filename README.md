@@ -60,4 +60,4 @@ In your pull request, please consider what context you would want to share with 
 
 ## Questions
 
-If you have any questions at all, please email us!
+If you have any questions at all, please email us! 
